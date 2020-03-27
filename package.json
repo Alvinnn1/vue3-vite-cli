@@ -1,0 +1,22 @@
+{
+  "name": "init-react-admin-cli",
+  "version": "1.0.4",
+  "description": "build react Admin project ",
+  "bin": {
+    "react-admin-cli": "./bin/react-admin-cli.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^5.0.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react-admin": "node index.js"
+  },
+  "author": "Alvinnn1 (604801215@qq.com)",
+  "license": "ISC"
+}
