@@ -1,6 +1,6 @@
 {
   "name": "init-react-admin-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "build react Admin project ",
   "bin": {
     "react-admin-cli": "./bin/react-admin-cli.js"
@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-admin": "node index.js"
   },
-  "keyword": "react CMS IMS Frontend antd",
+  "keywords": ["react-admin", "react-admin-cli", "CMS", "IMS", "Frontend", "antd"],
   "author": "Alvinnn1 (604801215@qq.com)",
   "license": "ISC",
   "homepage": "https://github.com/Alvinnn1/react-admin-cli",

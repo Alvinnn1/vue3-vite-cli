@@ -1,4 +1,4 @@
-## INSTALL
+## Install
 
 ```javascript
 npm install init-react-admin-cli -g
