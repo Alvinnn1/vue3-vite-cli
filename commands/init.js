@@ -78,7 +78,7 @@ module.exports = prompt(question).then(({name, description, author, api}) => {
     const projectName = name;
     const spinner = ora('creating project please wait...');
     spinner.start();
-    download('Alvinnn1/react-admin-template',`./${projectName}`, {}, (err) => {
+    download('Alvinnn1/vue3-vite-template',`./${projectName}`, {}, (err) => {
         if (err) {
             console.log(chalk.red(err))
             process.exit()
@@ -107,7 +107,7 @@ module.exports = prompt(question).then(({name, description, author, api}) => {
             ${chalk.bgWhite.black('   Run Application  ')}
             ${chalk.yellow(`cd ${name}`)}
             ${chalk.yellow('npm install')}
-            ${chalk.yellow('npm run start')}
+            ${chalk.yellow('npm run dev')}
           `);
                 }
             });
