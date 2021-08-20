@@ -1,7 +1,7 @@
 ## Install
 
 ```javascript
-npm install init-react-admin-cli -g
+npm install vue3-vite-cli -g
 ```
 
 ## Create project
@@ -11,5 +11,5 @@ cd projects
 ```
 ```javascript
 //build App
-react-admin-cli init ${yourAppName}
+vue3-vite-cli init ${yourAppName}
 ```
