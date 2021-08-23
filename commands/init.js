@@ -7,7 +7,7 @@ const fs = require('fs')
 const path = require('path')
 
 const option =  program.parse(process.argv).args[1]
-const defaultName = typeof option === 'string' ? option : 'react-admin'
+const defaultName = typeof option === 'string' ? option : 'vue3-vite'
 const question = [
     {
         type: 'input',
@@ -42,7 +42,7 @@ const question = [
         type: 'input',
         name: 'description',
         message: 'Project description',
-        default: 'Admin project by React',
+        default: 'vue3-vite',
         validate (val) {
             return true;
         },
@@ -54,18 +54,6 @@ const question = [
         name: 'author',
         message: 'Author',
         default: 'Alvin',
-        validate (val) {
-            return true;
-        },
-        transformer(val) {
-            return val;
-        }
-    },
-    {
-        type: 'input',
-        name: 'api',
-        message: 'Backend API proxy',
-        default: 'http://xxx.fun',
         validate (val) {
             return true;
         },
@@ -93,7 +81,6 @@ module.exports = prompt(question).then(({name, description, author, api}) => {
             packageJson.name = name;
             packageJson.description = description;
             packageJson.author = author;
-            packageJson.proxy = api;
             var updatePackageJson = JSON.stringify(packageJson, null, 2);
             fs.writeFile(`./${projectName}/package.json`, updatePackageJson, 'utf8', function (err) {
                 if(err) {

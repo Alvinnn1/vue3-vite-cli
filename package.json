@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "build vue3-vite project ",
   "bin": {
-    "vue3-vite-cli": "bin/react-admin-cli.js"
+    "vue3-vite-cli": "bin/vue3-vite-cli.js"
   },
   "dependencies": {
     "chalk": "^3.0.0",
